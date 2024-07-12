@@ -1,1 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, span {
+    color: #243e63;
+    text-align: center;
+    line-height: 1.25;
+}
+
+/* NAVIGATION BAR */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+}
+
+.logo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo__img {
+  width: 40px;
+  margin: 0 12px 0 0;
+}
+
+.logo__title {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav__link {
+  margin: 0 24px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #243e63;
+  font-weight: 600;
+}
+
+.nav__link--login {
+    margin: 0 24px 0 48px;
+}
+
+.nav__link--sign-up {
+  background-color: #6415FF;
+  margin: 0;
+  padding: 12px 32px;
+  border-radius: 50px;
+  color: white;
+  transition: all 500ms ease;
+}
+
+.nav__link--sign-up:hover {
+    background-color: #5011CC;
+}
