@@ -241,3 +241,50 @@ li {
 .features__para--wrapper {
   width: 40%;
 }
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+.service {
+  display: flex;
+  width: calc(100%/3);
+  padding: 32px 24px;
+}
+
+.service__image {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.service__image--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service__image--wrapper {
+  padding: 20px;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(226, 232, 240);
+}
+
+.service__description {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0 0 16px;
+}
+
+.service__description--title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #243E63;
+}
+
+.service_description--para {
+  padding: 16px 0 0 0;
+  line-height: 2;
+}
