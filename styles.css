@@ -28,32 +28,34 @@ h3,
 h4,
 h5,
 h6,
+p,
 span {
-  color: #243e63;
-  text-align: left;
-  line-height: 1.25;
-}
-
-p {
-  text-align: left;
   color: #7C8BA1;
+  text-align: left;
 }
 
 .purple {
   color: #6415ff;
 }
 
-.purple-button {
-  background-color: #6415ff;
-  margin: 0;
-  padding: 12px 32px;
-  border-radius: 50px;
-  color: white;
-  transition: all 300ms ease;
+.section__title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  padding: 0 0 16px 0;
 }
 
-.purple-button:hover {
-  background-color: #5011cc;
+.section__subtitle {
+  font-size: 48px;
+  font-weight: 900;
+  color: #243e63;
+}
+
+.section__para {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 0 0 0;
+  line-height: 1.625;
 }
 
 /* NAVIGATION BAR */
@@ -119,6 +121,21 @@ li {
   margin: 0 24px 0 48px;
 }
 
+.purple-button {
+  background-color: #6415ff;
+  text-decoration: none;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 32px;
+  border-radius: 50px;
+  color: white;
+  transition: all 300ms ease;
+}
+
+.purple-button:hover {
+  background-color: #5011cc;
+}
 
 /* INTRODUCTION */
 
@@ -145,20 +162,35 @@ li {
   color: #1A202C;
 }
 
-.intro__text--subtext {
+.intro__text--para {
   font-size: 18px;
   color: #243e63;
   padding: 32px 0;
 }
 
 .intro__email--wrapper {
+  display: flex;
+  justify-content: space-between;
   background-color: white;
-  padding: 20px 192px 20px 32px;
+  padding: 8px 8px 8px 32px;
   border-radius: 50px;
   border-style: solid;
   border-width: 2px;
   border-color: rgb(226, 232, 240);
   transition: all 300ms ease;
+}
+
+.intro__email:focus-within {
+  outline-style: none;
+  box-shadow: none;
+}
+
+.intro__email--wrapper:hover {
+  border-color: #A0AEC0;
+}
+
+.intro__email--wrapper:focus-within {
+  border-color: #6415ff;
 }
 
 .intro__email {
@@ -171,6 +203,41 @@ li {
   color: rgb(226, 232, 240);
 }
 
-.intro__email--wrapper:hover {
-  color: black;
+.intro__trusted-customers--wrapper {
+  padding: 80px 0 0 0;
+}
+
+.intro__trusted-customers--text {
+  font-size: 12px;
+  color:#A0AEC0;
+  font-weight: 700;
+}
+
+.intro__trusted-customers--image--wrapper {
+  padding: 16px 0 0 0;
+  width: 80%;
+}
+
+.intro__trusted-customers--image {
+  opacity: 0.5;
+}
+
+/* FEATURES */
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.features__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.features__para--wrapper {
+  width: 40%;
 }

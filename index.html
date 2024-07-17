@@ -11,7 +11,7 @@
     ></script>
   </head>
   <body>
-    <section class="landing">
+    <section id="nav-bar">
       <div class="row">
         <div class="nav">
           <div class="logo__container">
@@ -36,18 +36,70 @@
       </div>
     </section>
 
-    <section class="intro">
+    <section id="intro">
       <div class="row intro__container">
         <div class="intro__text--wrapper">
-          <h1 class="intro__text--title">Beautiful React Templates <span class="purple">for you.</span></h1>
-          <p class="intro__text--subtext">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
+          <h1 class="intro__text--title">
+            Beautiful React Templates <span class="purple">for you.</span>
+          </h1>
+          <p class="intro__text--para">
+            Our templates are easy to setup, understand and customize. Fully
+            modular components with a variety of pages and components.
+          </p>
           <div class="intro__email--wrapper">
-            <input class="intro__email" type="email" placeholder="Your E-mail Address"/>
+            <input
+              class="intro__email"
+              type="email"
+              placeholder="Your E-mail Address"
+            />
+            <ul>
+              <li class="purple-button">Get Started</li>
+            </ul>
+          </div>
+          <div class="intro__trusted-customers--wrapper">
+            <p class="intro__trusted-customers--text">OUR TRUSTED CUSTOMERS</p>
+            <figure class="intro__trusted-customers--image--wrapper">
+              <img
+                class="intro__trusted-customers--image"
+                src="/assets/Our Trusted Customers.png"
+                alt=""
+              />
+            </figure>
           </div>
         </div>
         <figure class="intro__image--wrapper">
-          <img src="assets/intro image.svg" alt="" />
+          <img src="/assets/intro image.svg" alt="" />
         </figure>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="row">
+          <div class="features__text">
+            <h2 class="section__title"><span class="purple">FEATURES</span></h2>
+            <h3 class="section__subtitle">
+              We have Amazing <span class="purple">Service.</span>
+            </h3>
+            <div class="features__para--wrapper">
+              <p class="section__para">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="services">
+            <div class="service">
+              <div class="service__icon">
+                <!-- iclass -->
+              </div>
+              <div class="service__text">
+                <p class="service__text--title">Secure</p>
+                <p class="service_text--para">We strictly only deal with vendors that provide top notch security.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
