@@ -82,6 +82,7 @@ span {
   font-weight: 500;
   padding: 16px 0 0 0;
   line-height: 1.625;
+  max-width: 540px;
 }
 
 /* NAVIGATION BAR */
@@ -412,4 +413,18 @@ li {
 
 .values__button {
   margin: 48px 0 0 0;
+}
+
+/* PRICING */
+
+.pricing__text--container {
+  width: 100%;
+}
+
+.pricing__text--wrapper {
+  padding: 40px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
