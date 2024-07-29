@@ -417,8 +417,8 @@ li {
 
 /* PRICING */
 
-.pricing__text--container {
-  width: 100%;
+.pricing__container {
+  flex-direction: column;
 }
 
 .pricing__text--wrapper {
@@ -429,3 +429,125 @@ li {
   width: 100%;
 }
 
+.plans {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 64px 0 0 0;
+}
+
+  /* GENERIC PLAN */
+
+.plan {
+  width: 31.5%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.plan__top--border {
+  width: 100%;
+  height: 8px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 1px 1px #A0AEC060;
+}
+
+.plan__tile {
+  box-shadow: 0px 0px 1px 1px #A0AEC060;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 32px;
+}
+
+.plan__tile:first-child {
+  border-radius: 10px 10px 0 0;
+  padding: 40px 32px 32px 32px;
+}
+
+.plan__tile:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.plan__tile--title {
+  font-size: 20px;
+  color: #1A202C;
+}
+
+.plan__price {
+  font-size: 48px;
+  color: #1A202C;
+  padding: 25px 0;
+}
+
+.plan__frequency {
+  font-size: 16px;
+  color: #A0AEC0;
+  letter-spacing: 1.6px;
+}
+
+.feature {
+  font-size: 16px;
+  font-weight: 500;
+  color: #718096;
+  padding: 20px 0 0 0;
+}
+
+.buy-now__button {
+  font-size: 14px;
+  font-weight: 700;
+  color: #F7FAFC;
+  width: 58%;
+  padding: 16px 32px;
+  border-radius: 50px;
+  border: none;
+  transition: all 300ms ease;
+}
+
+.buy-now__button:hover {
+  cursor: pointer;
+  transform: translate(1px, -1px);
+  opacity: 0.8;
+  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+  /* PERSONAL PLAN CUSTOMIZATIONS */
+
+.personal-plan__theme {
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+  /* BUSINESS PLAN CUSTOMIZATIONS */
+
+.business-plan__theme {
+  background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+  border-radius: 10px;
+}
+
+.business-plan__theme div.plan__tile {
+  box-shadow: 0px 0px 1px 1px #7d91ff;
+}
+
+.business-plan__theme p {
+  color: #F7FAFC;
+}
+
+.business-plan__theme button{
+  color: #6415ff;
+  background-color: #F7FAFC;
+}
+
+  /* ENTERPRISE PLAN CUSTOMIZATIONS */
+
+.enterprise-plan__theme {
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+/* TESTIMONIALS */
+
+.testimonials__text--wrapper {
+  margin: 0 0 0 64px;
+  padding: 0;
+}
