@@ -34,6 +34,14 @@ span {
   text-align: left;
 }
 
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
 .purple {
   color: #6415ff;
 }
@@ -111,7 +119,7 @@ span {
   padding: 32px;
 }
 
-.logo__wrapper {
+.nav__logo--wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,27 +130,19 @@ span {
   transition: all 300ms ease;
 }
 
-.logo__image--container {
+.nav__logo-image--container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.logo__image {
+.nav__logo-image {
   width: 40px;
   margin: 0 12px 0 0;
 }
 
-.logo__wrapper:hover {
+.nav__logo--wrapper:hover {
   color:#6415ff;
-}
-
-ul {
-  display: flex;
-}
-
-li {
-  list-style-type: none;
 }
 
 .nav__link {
@@ -767,3 +767,98 @@ li {
 
 /* FOOTER */
 
+footer {
+  background-color: #6415ff;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 48px 0 0 0;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  width: calc(100%/5);
+  align-items: center;
+  justify-content: center;
+}
+
+.link__item {
+  color: #F7FAFC;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 0 0 0;
+  transition: all 300ms ease;
+}
+
+.link li:first-child {
+  padding: 48px 0 0 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.link li:not(:first-child):hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+  color: #F7FAFC;
+}
+
+.footer__divider {
+  margin: 64px 0;
+  border: 1px solid rgb(116, 44, 255);
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 96px 0;
+}
+
+.footer__logo--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo-image {
+  width: 32px;
+}
+
+.footer__logo-name {
+  color: #f7FAFC;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 0 0 0 8px;
+}
+
+.footer__copyright {
+  color: #CBD5E0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link--wrapper {
+  background-color: #F7FAFC;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 8px;
+  margin: 0 0 0 16px;
+}
+
+.footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16px;
+  width: 16px;
+}
