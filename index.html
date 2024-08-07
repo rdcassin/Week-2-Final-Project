@@ -32,6 +32,25 @@
             <a href="#" class="purple-button">Sign Up</a>
           </li>
         </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+            </li>
+            <li class="menu__list">
+              <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -197,22 +216,21 @@
           <div class="step__number">01</div>
           <div class="step__text">
             <div class="step__text--title">Register</div>
-            <div class="step__text--para">Create an account with us using Google or Facebook.</div>
+            <p class="step__text--para">Create an account with us using Google or Facebook.</p>
           </div>
         </div>
         <div class="steps--wrapper">
           <div class="step__number">02</div>
           <div class="step__text">
             <div class="step__text--title">Download</div>
-            <div class="step__text--para">Browse and Download the template that you like from the marketplace.</div>
+            <p class="step__text--para">Browse and Download the template that you like from the marketplace.</p>
           </div>
         </div>
         <div class="steps--wrapper">
           <div class="step__number">03</div>
           <div class="step__text">
             <div class="step__text--title">Run</div>
-            <div class="step__text--para">Follow the instructions to setup and customize the template to your needs.
-            </div>
+            <p class="step__text--para">Follow the instructions to setup and customize the template to your needs.</p>
           </div>
         </div>
       </div>
