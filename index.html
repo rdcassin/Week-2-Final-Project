@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Final Project</title>
-    <link rel="stylesheet" href="styles2.css" />
+    <title>Week 2 Final Project</title>
+    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/dcdd888d63.js"
       crossorigin="anonymous"
@@ -18,14 +18,14 @@
         <nav class="nav__bar">
           <div class="row nav__bar--wrapper">
             <div class="nav__logo">
-              <figure class="nav__logo--img-mask">
+              <figure class="nav__logo-img--mask">
                 <img
                   src="./assets/nav-bar-logo-img.svg"
                   alt=""
                   class="nav__logo--img"
                 />
               </figure>
-              <div class="nav__logo--title">Treact</div>
+              <p class="nav__logo--title">Treact</p>
             </div>
             <div class="nav__links--container">
               <div class="nav__links">
@@ -61,7 +61,24 @@
                 >
               </div>
             </div>
+            <button class="btn__menu link__hover-effect--purple" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+              <button class="btn__menu btn__menu--close link__hover-effect--purple" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+              </button>
+              <div class="menu__links">
+                <a href="#" class="menu__link link__hover-effect link__hover-effect--purple">About</a>
+                <a href="#" class="menu__link link__hover-effect link__hover-effect--purple">Blog</a>
+                <a href="#" class="menu__link link__hover-effect link__hover-effect--purple">Pricing</a>
+                <a href="#" class="menu__link link__hover-effect link__hover-effect--purple">Contact Us</a>
+                <a href="#" class="menu__link link__hover-effect link__hover-effect--purple">Login</a>
+                <a href="#" class="menu__link purple-button purple-button__hover-effect primary">Sign Up</a>
+              </div>
+            </div>
           </div>
+
         </nav>
         <div class="container">
           <div class="row landing__content">
@@ -109,7 +126,7 @@
         <div class="container">
           <div class="row features__content">
             <h2 class="section__title">FEATURES</h2>
-            <h3 class="section__tag">
+            <h3 class="section__tag features__tag">
               We Have Amazing <span class="purple">Service.</span>
             </h3>
             <p class="section__para features__para">
@@ -577,74 +594,74 @@
     </main>
 
     <footer>
-      <div class="row">
-        <div class="links">
-          <ul class="link">
-            <li class="link__item">MAIN</li>
-            <li class="link__item">Blog</li>
-            <li class="link__item">FAQs</li>
-            <li class="link__item">Support</li>
-            <li class="link__item">About Us</li>
-          </ul>
-          <ul class="link">
-            <li class="link__item">PRODUCT</li>
-            <li class="link__item">Log In</li>
-            <li class="link__item">Personal</li>
-            <li class="link__item">Business</li>
-            <li class="link__item">Team</li>
-          </ul>
-          <ul class="link">
-            <li class="link__item">PRESS</li>
-            <li class="link__item">Logos</li>
-            <li class="link__item">Events</li>
-            <li class="link__item">Stories</li>
-            <li class="link__item">Office</li>
-          </ul>
-          <ul class="link">
-            <li class="link__item">TEAM</li>
-            <li class="link__item">Career</li>
-            <li class="link__item">Founders</li>
-            <li class="link__item">Culture</li>
-            <li class="link__item">Onboarding</li>
-          </ul>
-          <ul class="link">
-            <li class="link__item">LEGAL</li>
-            <li class="link__item">GDPR</li>
-            <li class="link__item">Privacy Policy</li>
-            <li class="link__item">Terms of Service</li>
-            <li class="link__item">Disclaimer</li>
-          </ul>
+      <div class="row footer__contents">
+        <div class="footer__links">
+          <div class="footer__column">
+            <p class="footer__column--title">MAIN</p>
+            <a href="" class="footer__link link__hover-effect">Blog</a>
+            <a href="" class="footer__link link__hover-effect">FAQs</a>
+            <a href="" class="footer__link link__hover-effect">Support</a>
+            <a href="" class="footer__link link__hover-effect">About Us</a>
+          </div>
+          <div class="footer__column">
+            <p class="footer__column--title">PRODUCT</p>
+            <a href="" class="footer__link link__hover-effect">Log In</a>
+            <a href="" class="footer__link link__hover-effect">Personal</a>
+            <a href="" class="footer__link link__hover-effect">Business</a>
+            <a href="" class="footer__link link__hover-effect">Team</a>
+          </div>
+          <div class="footer__column">
+            <p class="footer__column--title">PRESS</p>
+            <a href="" class="footer__link link__hover-effect">Logos</a>
+            <a href="" class="footer__link link__hover-effect">Events</a>
+            <a href="" class="footer__link link__hover-effect">Stories</a>
+            <a href="" class="footer__link link__hover-effect">Office</a>
+          </div>
+          <div class="footer__column">
+            <p class="footer__column--title">TEAM</p>
+            <a href="" class="footer__link link__hover-effect">Career</a>
+            <a href="" class="footer__link link__hover-effect">Founders</a>
+            <a href="" class="footer__link link__hover-effect">Culture</a>
+            <a href="" class="footer__link link__hover-effect">Onboarding</a>
+          </div>
+          <div class="footer__column">
+            <p class="footer__column--title">LEGAL</p>
+            <a href="" class="footer__link link__hover-effect">GDPR</a>
+            <a href="" class="footer__link link__hover-effect">Privacy Policy</a>
+            <a href="" class="footer__link link__hover-effect"
+              >Terms of Service</a
+            >
+            <a href="" class="footer__link link__hover-effect">Disclaimer</a>
+          </div>
         </div>
         <div class="footer__divider"></div>
-        <div class="footer__info">
-          <div class="footer__logo--container">
-            <figure class="footer__logo-image--container">
-              <img class="footer__logo-image"
-                src="https://treact.owaiskhan.me/static/media/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="" />
+        <div class="footer__bottom">
+          <div class="footer__logo">
+            <figure class="footer__logo-img--mask">
+              <img
+                src="https://cutzudev.github.io/treact_example/assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg"
+                alt=""
+                class="nav__logo--img"
+              />
             </figure>
-            <div class="footer__logo-name">Treact Inc.</div>
+            <p class="footer__logo--title">Treact Inc.</p>
           </div>
-          <div class="footer__copyright">© 2018 Treact Inc. All Rights Reserved.</div>
-          <div class="footer__links">
-            <a href="" class="footer__link--wrapper">
-              <div class="footer__link">
-                <i class="fa-brands fa-facebook-f fa-xs" style="color: #1a202c;"></i>
-              </div>
-            </a>
-            <a href="" class="footer__link--wrapper">
-              <div class="footer__link">
-                <i class="fa-brands fa-twitter fa-xs" style="color: #1a202c;"></i>
-              </div>
-            </a>
-            <a href="" class="footer__link--wrapper">
-              <div class="footer__link">
-                <i class="fa-brands fa-youtube fa-xs" style="color: #1a202c;"></i>
-              </div>
-            </a>
+          <p class="footer__copyright">© 2018 Treact Inc. All Rights Reserved.</p>
+          <div class="footer__socials">
+            <button class="footer__social">
+              <i class="fa-brands fa-facebook-f" style="color: #1a202c"></i>
+            </button>
+            <button class="footer__social">
+              <i class="fa-brands fa-twitter" style="color: #1a202c"></i>
+            </button>
+            <button class="footer__social">
+              <i class="fa-brands fa-youtube" style="color: #1a202c"></i>
+            </button>
           </div>
         </div>
       </div>
     </footer>
 
   </body>
+
 </html>
