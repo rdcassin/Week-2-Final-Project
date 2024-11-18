@@ -165,18 +165,21 @@ button {
 .menu__backdrop {
   width: 100%;
   position: fixed;
-  background-color: #FFFFFF;
-  margin: 24px 16px;
-  padding: 32px;
   display: flex;
   flex-direction: column;
   z-index: 1;
   top: 0;
   right: 0;
   left: 0;
+  display: none;
+}
+
+.menu__backdrop--wrapper {
+  background-color: #FFFFFF;
   border: 1px solid #E5E7EB;
   border-radius: 10px;
-  display: none;
+  margin: 24px 16px;
+  padding: 32px;
 }
 
 .menu--open .menu__backdrop {
